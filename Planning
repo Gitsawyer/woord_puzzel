@@ -1,0 +1,39 @@
+Functies:
+- Slepen naar vierkant
+    - Check of kan, niet al letters van ander woord
+    - Vanuit originele woord
+        - Als al gevuld vervangen
+
+- Dubbel klik legen letter in antwoord
+
+- Grijze letter die al gebruikt zijn.
+
+- Connectie woord met antwoord puzzel
+    - kleur onlijsting
+
+- Antwoord Check
+    + FIREWORKS
+
+Model:
+Begin woorden, List<objectBasisLetter>
+objectBasisLetter
+    - string/int - letter
+    - bool - isGebruikt
+
+Blok
+    - AntwoordOmlijning, List<String>
+    - AntwoordVoorCheck, List<String>
+    - beginWoord referentie (int)
+
+    - AntwoordInProcess, List<AntwoordLetter>
+
+    AntwoordLetter
+        - index in beginWoord
+        (waarde deduceren door beginwoord ref en index)
+
+
+Later:
+   Keuze menu voor swappen en checken
+
+   - Slepen vanuit puzzel
+           - Als andere gevuld swappen
